@@ -1,0 +1,33 @@
+
+body{
+    --color-dark-background: #252B42;
+    font-family: 'Montserrat';
+}
+
+:root{
+
+    --color-light-text: #FFFFFF;
+    --color-primary-color: #23A6F0;
+    --color-second-text: #737373;
+    --color-secondary: #F3CD03;
+    --color-dark-background: #252B42;
+    --color-muted-color: #BDBDBD;
+    --color-disabled-element-color: #8EC2F2;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 500px;
+    width: 470px;
+}
