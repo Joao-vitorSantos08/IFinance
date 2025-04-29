@@ -1,6 +1,6 @@
 
 body{
-    --color-dark-background: #252B42;
+    background-color: var(--color-dark-background);
     font-family: 'Montserrat';
 }
 

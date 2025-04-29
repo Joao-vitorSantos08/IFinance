@@ -1,1 +1,78 @@
 @import url(/src/styles/global.css);
+
+header{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: var( --color-light-text);
+}
+
+.nav-header ul{
+    display: flex;
+    gap: 21px;
+
+}
+
+
+
+.nav-header a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-light-text);
+    font-weight: 600px; 
+}
+
+.nav-header a:hover{
+    filter: brightness(0.8); /* escurece */
+}
+
+
+.header-button{
+    gap: 20px;
+    display: flex;
+}
+
+.header-button a{
+    text-decoration: none;
+}
+
+.header-button a button{
+    gap: 15px;
+    display: flex;
+
+}
+
+
+.login{
+    color: var(--color-light-text);
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login:hover{
+    filter: brightness(0.8);
+}
+
+
+
+.become-member {
+    padding: 15px 25px;
+    background-color: var( --color-primary-color);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-light-text);
+    cursor: pointer;
+}
+
+.become-member:hover{
+    filter: brightness(0.90);
+}
