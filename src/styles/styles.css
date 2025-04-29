@@ -77,3 +77,52 @@ header{
     filter: brightness(0.90);
 }
 
+
+main{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 123px;
+}
+
+.main-content{
+    width: 509px;
+    
+}
+
+.main-content h1{
+    font-size: 58px;
+    font-weight: 800px;
+    color: var(--color-light-text);
+}
+
+.main-content p{
+    width: 376px;
+    font-size: 20px;
+    color: var(--color-light-text);
+    margin-bottom: 35px;
+}
+
+
+.get-quote-now{
+    background-color: var(--color-primary-color);
+    color: var(--color-light-text);
+    padding: 15px 36px;
+    border-radius: 37px;
+    border: none;
+}
+
+.learn-more{
+    background-color: transparent;
+    color: var(--color-light-text);
+    border-radius: 37px;
+    border: solid 1px;
+    padding: 15px 35px;
+}
+
+.main-img img{
+    width: 471px;
+    height: 583px;
+    margin-top: 43px;
+}
