@@ -1,4 +1,10 @@
 
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: var(--color-dark-background);
     font-family: 'Montserrat';
@@ -30,4 +36,5 @@ p{
     font-size: 14px;
     font-weight: 500px;
     width: 470px;
+    margin: 0 auto;
 }
