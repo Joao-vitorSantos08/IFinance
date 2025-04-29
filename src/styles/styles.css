@@ -9,11 +9,13 @@ header{
 
 .logo{
     color: var( --color-light-text);
+    margin-top: 20px;
 }
 
 .nav-header ul{
     display: flex;
     gap: 21px;
+    margin-top: 24px;
 
 }
 
@@ -34,6 +36,7 @@ header{
 .header-button{
     gap: 20px;
     display: flex;
+    margin-top: 20px;
 }
 
 .header-button a{
@@ -84,6 +87,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 123px;
+    margin: 0px 157px;
 }
 
 .main-content{
@@ -95,11 +99,13 @@ main{
     font-size: 58px;
     font-weight: 800px;
     color: var(--color-light-text);
+    margin-bottom: 35px;
 }
 
 .main-content p{
     width: 376px;
     font-size: 20px;
+    margin-right: 200px;
     color: var(--color-light-text);
     margin-bottom: 35px;
 }
@@ -121,8 +127,64 @@ main{
     padding: 15px 35px;
 }
 
-.main-img img{
-    width: 471px;
+.main-img img{  
     height: 583px;
     margin-top: 43px;
 }
+
+
+.section-quality{
+    margin-top: 24px;
+    margin: 0px 231px;
+}
+
+
+.quality-content h2{
+    color: var(--color-light-text);
+    width: 451px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.quality-content p{
+    color: var( --color-second-text);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quality-container{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-business{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap:19px;
+    padding: 35px 27px 35px 20px;
+    border: solid 1px var(--color-light-text);
+    color: var(--color-light-text);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}  
+
+.card-business:hover{
+    filter: brightness(0.90); /* escurece */
+}
+
+.card-business-img{
+    width: 49.33px;
+    height: 37.33px;
+}
+
+
+.card-business p{
+    width: 213px;
+    margin-top: 5px;
+}
+
