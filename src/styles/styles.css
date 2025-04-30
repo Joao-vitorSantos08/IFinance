@@ -139,6 +139,7 @@ main{
 }
 
 
+
 .quality-content h2{
     color: var(--color-light-text);
     width: 451px;
@@ -188,3 +189,39 @@ main{
     margin-top: 5px;
 }
 
+
+.what-clients-say{
+    text-align: center;
+    margin-top: 112px;
+    margin-bottom: 78px;
+}
+
+.what-clients-say p{
+    color: var( --color-light-text);
+    margin-top: 10px;
+}
+
+.clients-content{
+    background-color: var(--color-light-text);
+    width: 749px;
+    height: 362.01px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.clients-content p{
+    margin-top: 30px;
+    margin-bottom: 16.83px;
+    color: var(--color-second-text);
+}
+
+.clients-content h3{
+    margin: 15px 0px 8px;
+}
+
+.clients-content h4{
+    color: var(--color-second-text);
+    font-size: 14px;
+    font-weight: 600px;
+}
