@@ -280,7 +280,6 @@ main{
 
 .section-princing{
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .section-princing p{
@@ -305,6 +304,7 @@ main{
     justify-content: center;
     width: 510px;
     margin: 0 auto;
+    margin-bottom: 160px;
     border-radius: 10px;
     gap: 30px;
     transition: 0.7s;
@@ -336,6 +336,20 @@ main{
     color: var(--color-primary-color);
 }
 
+.for-free{
+    display: flex;
+}
+
+.for-free h4{
+    color: var(--color-primary-color);
+    margin-right: 80px;
+}
+
+.for-free p{
+    margin-right: 30px;
+}
+
+
 .per-month-button p{
     color: var(--color-disabled-element-color);
     width: 78px;
@@ -350,4 +364,28 @@ main{
     color: var(--color-light-text);
     cursor: pointer;
     margin-top: 29px;
+}
+
+.have-branches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 143px 0px  196px;
+    margin-bottom: 51px;
+}
+
+.have-content{
+    width: 602px;
+    padding: 50px 126px 50px 0px;
+}
+
+.have-content P{
+    color: var(--color-light-text);
+    margin-top: 15px;
+    width: 455px;
+}
+
+.have-img{
+    width: 414px;
+
 }
