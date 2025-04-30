@@ -225,3 +225,52 @@ main{
     font-size: 14px;
     font-weight: 600px;
 }
+
+
+.download-app{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.download-app p{
+    color: var(--color-light-text);
+    margin-top: 10px;
+}
+
+  
+ .download-content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+ }
+
+
+
+ .download-content a {
+    text-decoration: none;
+ }
+
+ .download-content a:hover{
+    filter: brightness(0.80);
+ }
+ 
+.download-content article{
+    display: flex;
+    gap: 25.23px;
+    padding: 18px 28px;
+    width: 214px;
+    border: solid 1px var(--color-light-text);
+    align-items: center;
+    border-radius: 10px;
+   
+}
+
+
+
+.app p{
+    width: 120px;
+    text-align: start;
+    font-weight: bold;
+}
