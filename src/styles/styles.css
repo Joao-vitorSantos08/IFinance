@@ -92,7 +92,7 @@ main{
 
 .main-content{
     width: 509px;
-    
+
 }
 
 .main-content h1{
@@ -388,4 +388,141 @@ main{
 .have-img{
     width: 414px;
 
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 149px;
+}
+
+form h3{
+    text-align: center;
+    margin: 40px 135px;
+}
+
+.form-containe{
+    background-color: var(--color-light-text);
+    width: 610px;
+    height: 610px;
+    padding: 0px 50px;  
+}
+
+
+.form-information label{
+    display: block;
+    margin:10px 0px;
+    font-size: 14px;
+    font-weight: 600px;
+    color: var(  --color-dark-background) ;
+
+}
+
+.form-information input{
+    padding: 11px 322px 11px 21px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    border: solid 1px #E6E6E6;
+    margin-bottom: 10px;
+}
+
+select{
+    padding: 11px 322px 11px 21px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    border: solid 1px #E6E6E6;
+    margin-bottom: 10px;
+    width: 507px;
+    
+}
+
+.form-button {
+    padding: 15px 200px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: var(--color-primary-color);
+    color: var(--color-light-text);
+    cursor: pointer;
+}
+
+footer{
+    border-top: 2px solid var(--color-light-text);
+}
+
+.footer-container{
+    display: flex;
+    gap: 30px;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch{
+    color: var(--color-light-text);
+    margin-bottom: 32px;
+}
+
+.get-in-touch p{
+    margin: 25px 0px;
+    width: 213px;
+}
+
+.icon-social{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: start;
+    margin-top: 25px;
+}
+
+.facebook{
+    transition: 0.7s;
+}
+
+.facebook:hover{
+    transform: translateY(-10px);
+}
+
+.instagram{
+    transition: 0.7s;
+}
+
+.instagram:hover{
+    transform: translateY(-10px);
+}
+
+.twitter{
+    transition: 0.7s;
+}
+
+.twitter:hover{
+    transform: translateY(-10px);
+}
+
+.footer-content h3{
+    color: var(--color-light-text);
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+
+.footer-content ul{
+    list-style: none;
+}
+
+.footer-content li{
+    margin-bottom: 10px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: var(--color-light-text);
+
+}
+
+.by-figmaland {
+    background-color: var(--color-light-text);
+    padding: 25px 341px;
+    text-align: center;
+    color: var(--color-second-text);
 }
