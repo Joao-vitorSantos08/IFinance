@@ -88,11 +88,13 @@ header{
  }
  
  .menu{
-     background-color: black;
+     background-color: white;
      height: 4px;
      width: 100%;
      margin: 2px;
  }
+
+
 
 
 main{
@@ -274,7 +276,6 @@ main{
  }
 
 
-
  .download-content a {
     text-decoration: none;
  }
@@ -331,12 +332,9 @@ main{
     margin-bottom: 160px;
     border-radius: 10px;
     gap: 30px;
-    transition: 0.7s;
+   
 }
 
-.per-month:hover{
-    transform: translateY(-10px);
-}
 
 
 .free h3{
@@ -355,6 +353,7 @@ main{
 .per-month-button{
     width: 163px;
 }
+
 
 .per-month-button h2{
     color: var(--color-primary-color);
@@ -388,6 +387,10 @@ main{
     color: var(--color-light-text);
     cursor: pointer;
     margin-top: 29px;
+}
+
+.per-month-button button:hover{
+    filter: brightness(0.90);
 }
 
 .have-branches{
@@ -523,6 +526,7 @@ footer{
     transform: translateY(-10px);
 }
 
+
 .footer-content h3{
     color: var(--color-light-text);
     margin-bottom: 25px;
@@ -536,6 +540,11 @@ footer{
 
 .footer-content li{
     margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.footer-content li:hover{
+    transform: translatex(10px);
 }
 
 .footer-content a{
@@ -544,9 +553,491 @@ footer{
 
 }
 
+.footer-content a:hover{
+    color: var(--color-primary-color);
+}
+
 .by-figmaland {
     background-color: var(--color-light-text);
     padding: 25px 341px;
     text-align: center;
     color: var(--color-second-text);
+}
+
+
+/* --------- RESPONSIVIDADE --------- */
+
+@media (max-width: 600px){
+
+    /* ---- header ---- */
+    .nav-header, .header-button{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+    
+    /* ---- fim header ---- */
+
+    /* ----- main ---- */
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        margin:  0 auto;
+    }
+
+    .main-content{
+        width: 90%;
+        margin:  0 auto;
+    }
+
+    .main-content h1{
+        margin-top: 40px;
+        font-size: 48px;
+    }
+
+    .main-content p{
+        width: 100%;
+    }
+
+   .main-button{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 0px;
+   }
+
+   .main-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+   }
+
+    /* ---- fim main ---- */
+
+    /* ---- section-quality ---- */
+    
+    .section-quality{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   .quality-content{
+        width: 90%;
+        margin:  0 auto;
+   }
+
+   .quality-content h2{
+        width: 90%;
+       font-size: 30px;
+       margin:  0 auto;
+   }
+
+   .quality-content p{
+     width: 90%;
+     margin:  0 auto;
+     margin-top: 20px;
+   }
+
+    .quality-container{
+        width: 90%;
+        margin:  0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 14px;
+    }
+
+    /* ---- fim section-quality ---- */
+
+     /* ----  what-clients-say ---- */
+
+     .what-clients-say{
+        width: 90%;
+        margin:  0 auto;
+     }
+
+     .what-clients-say p{
+        width: 100%;
+     }
+
+     .clients-content{
+        width: 100%;
+     }
+
+     .clients-content p{
+        font-weight: 600px;
+     }
+
+      /* ---- fim what-clients-say ---- */
+
+        /* ---- download-app ---- */
+
+        .download-app{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .download-app h2{
+            margin: 40px 0px 20px;
+        }
+
+        .download-app p {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .download-content{
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* ---- fim download-app ---- */
+
+        /* ----- section-princing ----- */
+
+        .section-princing{
+            width: 90%;
+            margin:  0 auto;
+        }
+
+        .section-princing p{
+            width: 100%;
+        }
+
+        .pricing-cards {
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 40px;
+            gap: 20px;
+            width: 90%;
+        }
+    
+        .per-month {
+            flex-direction: column;
+            padding: 30px 10px;
+            width: 100%;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+
+        /* ----- fim  section-princing ----- */
+
+        /* ------ have-branches ------ */
+
+        .have-branches {
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    
+        .have-content {
+            width: 90%;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .have-content p {
+            width: 100%;
+        }
+    
+        .have-img {
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .have-img img {
+            width: 100%;
+        }
+        /* ------ fim have-branches ------ */
+
+        /*------ form ------*/
+       form{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+       }
+       form img {
+        display: none;
+      }
+      
+      .form-containe{
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+      }
+
+      .form-containe h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .form-content {
+        margin-bottom: 1rem;
+      }
+
+      .form-information label {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+    .form-information input,
+    .form-information select {
+        width: 90%;
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+      
+    .form-button {
+        width: 90%;
+        padding: 12px;
+        font-size: 1.1rem;
+        background-color: var(--color-primary-color);
+        border: none;
+      }
+      
+      
+     /*--------fim form ------*/
+        
+     /* ------- footer ------ */
+
+     footer{
+        width: 100%;
+        margin:  0 auto;
+     }
+
+     .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     }
+
+     .by-figmaland{
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+     }
+
+     .by-figmaland p{
+        width: 90%;
+        text-align: center;
+     }
+
+
+      /* ------- fim footer ------ */
+
+}
+
+@media (min-width: 601px) and (max-width: 991px){
+
+
+        /* ---- header ---- */
+
+        header{
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        /* ---- fim header ---- */
+
+     /* ----- main ---- */
+
+     main {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+    }
+
+ 
+
+    .main-content h1{
+        margin-top: 40px;
+        font-size: 58px;
+    }
+
+    .main-content p{
+        width: 100%;
+    }
+
+   .main-button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+   }
+
+   .main-img img{
+        width: 450px;
+        height: 100%;
+   }
+
+    /* ---- fim main ---- */
+
+    /* ---- section-quality ---- */
+    
+    .section-quality{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .quality-content{
+        width: 100%;
+        margin:  0 auto;
+   }
+
+   .quality-content h2{
+       font-size: 40px;
+       margin-top: 40px;
+   }
+
+   .quality-content p{
+     margin-top: 20px;
+   }
+
+    .quality-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    /* ---- fim section-quality ---- */
+
+     /* ----  what-clients-say ---- */
+
+     .what-clients-say{
+        width: 95%;
+        margin:  0 auto;
+     }
+
+     .what-clients-say h2{
+        margin: 40px 0px 10px;
+     }
+
+     .what-clients-say p{
+        width: 75%;
+        margin:  0 auto;
+     }
+
+     .clients-content{
+        width: 100%;
+     }
+
+     .clients-content p{
+        font-weight: 600px;
+     }
+
+      /* ---- fim what-clients-say ---- */
+
+        /* ---- download-app ---- */
+
+        .download-app{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .download-app h2{
+            margin-top: 40px;
+        }
+
+        .download-content{
+            margin: 30px 70px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        
+
+        /* ---- fim download-app ---- */
+
+        /* ----- section-princing ----- */
+
+        .section-princing{
+            width: 90%;
+            margin:  0 auto;
+        }
+
+        .section-princing p{
+            width: 70%;
+        }
+
+        .pricing-cards {
+            margin: 0 auto;
+            margin-top: 40px;
+            gap: 50px;
+            width: 90%;
+        }
+    
+        .per-month {
+            flex-direction: column;
+            padding: 30px 30px;
+            width: 100%;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+
+        /* ----- fim  section-princing ----- */
+
+        /* ------ have-branches ------ */
+
+        .have-branches {
+            padding: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    
+        .have-content {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .have-content h2{
+            width: 100%;
+            font-size: 35px;
+            text-align: start;
+        }
+
+        .have-content p {
+            text-align: start;
+            width: 90%;
+        }
+    
+        /* ------ fim have-branches ------ */
+
+        /*------ form ------*/
+       form{
+        width: 90%;
+        padding: 1rem;
+       }
+     
+      
+     /*--------fim form ------*/
+        
+     /* ------- footer ------ */
+
+     footer{
+        width: 100%;
+        margin:  0 auto;
+     }
+
+
+     .by-figmaland{
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+     }
+
+
+      /* ------- fim footer ------ */
 }
