@@ -85,7 +85,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina o seguinte e
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE AUTOR-->
-##👨🏽‍💻 Autor
+## 👨🏽‍💻 Autor
 
 <a href="https://br.linkedin.com/in/Joao-vitorSantos08">
 João Vitor Santos souza</a>
