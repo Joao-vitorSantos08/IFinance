@@ -17,6 +17,7 @@
 <!-- MODELO DE DESCRIÇÃO -->
 ## 📄 Descrição do entregável
 
+- `src/`: Pasta que contém os arquivos fonte do projeto.
 - `assets`: arquivos de mídia usados no projeto (ícones, logos, etc.)
 - `style`: folhas de estilo CSS
 - `fonts`: fontes personalizadas
