@@ -45,10 +45,13 @@ iFinance é um projeto proposto pelo meu professor de Web Design Front-End com o
 <!-- MODELO DE COMO EXECUTAR O PROJETO -->
 ## 🚀 Como executar o projeto
 
-1 - Baixar o Projeto <br>
-2 - Abrir em um editor de código<br>
-3 - Abrir o arquivo index.html
-
+1. Clone o repositório:
+   ```bash
+   https://github.com/Joao-vitorSantos08/IFinance.git
+2. Acesse a pasta do projeto:
+   
+   ```bash
+   cd IFinance
 <!-- ---------------------------------------------------------------------- -->
 
 <!-- MODELO DE PRÉ REQUISITOS -->
