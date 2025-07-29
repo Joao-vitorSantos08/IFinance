@@ -1,18 +1,18 @@
 @import url(/src/styles/global.css);
 
-header{
+header {
     display: flex;
     gap: 120px;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
-    color: var( --color-light-text);
+.logo {
+    color: var(--color-light-text);
     margin-top: 20px;
 }
 
-.nav-header ul{
+.nav-header ul {
     display: flex;
     gap: 21px;
     margin-top: 24px;
@@ -21,36 +21,38 @@ header{
 
 
 
-.nav-header a{
+.nav-header a {
     text-decoration: none;
     list-style: none;
     color: var(--color-light-text);
-    font-weight: 600px; 
+    font-weight: 600px;
 }
 
-.nav-header a:hover{
-    filter: brightness(0.8); /* escurece */
+.nav-header a:hover {
+    filter: brightness(0.8);
+    /* escurece */
 }
 
 
-.header-button{
+
+.header-button {
     gap: 20px;
     display: flex;
     margin-top: 20px;
 }
 
-.header-button a{
+.header-button a {
     text-decoration: none;
 }
 
-.header-button a button{
+.header-button a button {
     gap: 15px;
     display: flex;
 
 }
 
 
-.login{
+.login {
     color: var(--color-light-text);
     background-color: transparent;
     border: none;
@@ -58,7 +60,7 @@ header{
     cursor: pointer;
 }
 
-.login:hover{
+.login:hover {
     filter: brightness(0.8);
 }
 
@@ -66,7 +68,7 @@ header{
 
 .become-member {
     padding: 15px 25px;
-    background-color: var( --color-primary-color);
+    background-color: var(--color-primary-color);
     border-radius: 5px;
     border: none;
     text-align: center;
@@ -76,28 +78,45 @@ header{
     cursor: pointer;
 }
 
-.become-member:hover{
+.become-member:hover {
     filter: brightness(0.90);
 }
 
-.menu-toggle{
+.menu-toggle {
     flex-direction: column;
     width: 30px;
-    height: 22px; 
-    display: none;   
- }
- 
- .menu{
-     background-color: white;
-     height: 4px;
-     width: 100%;
-     margin: 2px;
- }
+    height: 22px;
+    display: none;
+    gap: 2px;
+}
+
+.menu {
+    background-color: white;
+    padding: 2px 15px;
+}
+
+.nav-menu-mobile {
+    display: none;
+}
+
+ .menu-toggle.active :nth-child(1){
+    background-color: gray;
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active :nth-child(2){
+    opacity: 0;
+
+}
+
+.menu-toggle.active :nth-child(3){
+    background-color: grey;
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
 
 
-
-main{
+main {
     display: flex;
     margin-top: 40px;
     justify-content: center;
@@ -106,19 +125,19 @@ main{
     margin: 0px 157px;
 }
 
-.main-content{
+.main-content {
     width: 509px;
 
 }
 
-.main-content h1{
+.main-content h1 {
     font-size: 58px;
     font-weight: 800px;
     color: var(--color-light-text);
     margin-bottom: 35px;
 }
 
-.main-content p{
+.main-content p {
     width: 376px;
     font-size: 20px;
     margin-right: 200px;
@@ -127,7 +146,7 @@ main{
 }
 
 
-.get-quote-now{
+.get-quote-now {
     background-color: var(--color-primary-color);
     color: var(--color-light-text);
     padding: 15px 36px;
@@ -137,11 +156,11 @@ main{
 }
 
 
-.get-quote-now:hover{
+.get-quote-now:hover {
     filter: brightness(0.90);
 }
 
-.learn-more{
+.learn-more {
     background-color: transparent;
     color: var(--color-light-text);
     border-radius: 37px;
@@ -150,25 +169,25 @@ main{
     cursor: pointer;
 }
 
-.learn-more:hover{
-    filter: brightness(0.85); 
+.learn-more:hover {
+    filter: brightness(0.85);
 }
 
-.main-img img{  
+.main-img img {
     width: 471px;
     height: 583px;
     margin-top: 43px;
 }
 
 
-.section-quality{
+.section-quality {
     margin-top: 24px;
     margin: 0px 231px;
 }
 
 
 
-.quality-content h2{
+.quality-content h2 {
     color: var(--color-light-text);
     width: 451px;
     text-align: center;
@@ -176,13 +195,13 @@ main{
 
 }
 
-.quality-content p{
-    color: var( --color-second-text);
+.quality-content p {
+    color: var(--color-second-text);
     text-align: center;
     margin-top: 10px;
 }
 
-.quality-container{
+.quality-container {
     display: flex;
     justify-content: center;
     display: grid;
@@ -190,47 +209,48 @@ main{
     gap: 30px;
 }
 
-.card-business{
+.card-business {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap:19px;
+    gap: 19px;
     padding: 35px 27px 35px 20px;
     border: solid 1px var(--color-light-text);
     color: var(--color-light-text);
     margin-bottom: 30px;
     margin-top: 30px;
-}  
-
-.card-business:hover{
-    filter: brightness(0.90); /* escurece */
 }
 
-.card-business-img{
+.card-business:hover {
+    filter: brightness(0.90);
+    /* escurece */
+}
+
+.card-business-img {
     width: 49.33px;
     height: 37.33px;
 }
 
 
-.card-business p{
+.card-business p {
     width: 213px;
     margin-top: 5px;
 }
 
 
-.what-clients-say{
+.what-clients-say {
     text-align: center;
     margin-top: 112px;
     margin-bottom: 78px;
 }
 
-.what-clients-say p{
-    color: var( --color-light-text);
+.what-clients-say p {
+    color: var(--color-light-text);
     margin-top: 10px;
 }
 
-.clients-content{
+.clients-content {
     background-color: var(--color-light-text);
     width: 749px;
     height: 362.01px;
@@ -239,52 +259,53 @@ main{
     margin-top: 80px;
     border-radius: 5px;
 }
-.clients-content p{
+
+.clients-content p {
     margin-top: 30px;
     margin-bottom: 16.83px;
     color: var(--color-second-text);
 }
 
-.clients-content h3{
+.clients-content h3 {
     margin: 15px 0px 8px;
 }
 
-.clients-content h4{
+.clients-content h4 {
     color: var(--color-second-text);
     font-size: 14px;
     font-weight: 600px;
 }
 
 
-.download-app{
+.download-app {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.download-app p{
+.download-app p {
     color: var(--color-light-text);
     margin-top: 10px;
 }
 
-  
- .download-content{
+
+.download-content {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
- }
+}
 
 
- .download-content a {
+.download-content a {
     text-decoration: none;
- }
+}
 
- .download-content a:hover{
+.download-content a:hover {
     filter: brightness(0.80);
- }
- 
-.download-content article{
+}
+
+.download-content article {
     display: flex;
     gap: 25.23px;
     padding: 18px 28px;
@@ -297,22 +318,22 @@ main{
 
 
 
-.app p{
+.app p {
     width: 120px;
     text-align: start;
     font-weight: bold;
 }
 
-.section-princing{
+.section-princing {
     text-align: center;
 }
 
-.section-princing p{
+.section-princing p {
     color: var(--color-light-text);
     margin-top: 10px;
 }
 
-.pricing-cards{
+.pricing-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +342,7 @@ main{
     gap: 29px;
 }
 
-.per-month{
+.per-month {
     background-color: var(--color-light-text);
     padding: 50px 49px;
     display: flex;
@@ -332,55 +353,55 @@ main{
     margin-bottom: 160px;
     border-radius: 10px;
     gap: 30px;
-   
+
 }
 
 
 
-.free h3{
+.free h3 {
     color: var(--color-primary-color);
     text-align: start;
     margin-bottom: 15px;
 }
 
-.free p{
+.free p {
     text-align: start;
     margin: 0 auto;
     color: var(--color-second-text);
     width: 217px;
 }
 
-.per-month-button{
+.per-month-button {
     width: 163px;
 }
 
 
-.per-month-button h2{
+.per-month-button h2 {
     color: var(--color-primary-color);
 }
 
-.for-free{
+.for-free {
     display: flex;
 }
 
-.for-free h4{
+.for-free h4 {
     color: var(--color-primary-color);
     margin-right: 80px;
 }
 
-.for-free p{
+.for-free p {
     margin-right: 30px;
 }
 
 
-.per-month-button p{
+.per-month-button p {
     color: var(--color-disabled-element-color);
     width: 78px;
     margin-right: 2px;
 
 }
 
-.per-month-button button{
+.per-month-button button {
     background-color: var(--color-primary-color);
     padding: 15px 40px;
     border-radius: 5px;
@@ -389,63 +410,63 @@ main{
     margin-top: 29px;
 }
 
-.per-month-button button:hover{
+.per-month-button button:hover {
     filter: brightness(0.90);
 }
 
-.have-branches{
+.have-branches {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 143px 0px  196px;
+    padding: 0px 143px 0px 196px;
     margin-bottom: 51px;
 }
 
-.have-content{
+.have-content {
     width: 602px;
     padding: 50px 126px 50px 0px;
 }
 
-.have-content P{
+.have-content P {
     color: var(--color-light-text);
     margin-top: 15px;
     width: 455px;
 }
 
-.have-img{
+.have-img {
     width: 414px;
 
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
     margin-bottom: 149px;
 }
 
-form h3{
+form h3 {
     text-align: center;
     margin: 40px 135px;
 }
 
-.form-containe{
+.form-containe {
     background-color: var(--color-light-text);
     width: 610px;
     height: 610px;
-    padding: 0px 50px;  
+    padding: 0px 50px;
 }
 
 
-.form-information label{
+.form-information label {
     display: block;
-    margin:10px 0px;
+    margin: 10px 0px;
     font-size: 14px;
     font-weight: 600px;
-    color: var(  --color-dark-background) ;
+    color: var(--color-dark-background);
 
 }
 
-.form-information input{
+.form-information input {
     padding: 11px 322px 11px 21px;
     background-color: #F9F9F9;
     border-radius: 5px;
@@ -453,14 +474,14 @@ form h3{
     margin-bottom: 10px;
 }
 
-select{
+select {
     padding: 11px 322px 11px 21px;
     background-color: #F9F9F9;
     border-radius: 5px;
     border: solid 1px #E6E6E6;
     margin-bottom: 10px;
     width: 507px;
-    
+
 }
 
 .form-button {
@@ -472,11 +493,11 @@ select{
     cursor: pointer;
 }
 
-footer{
+footer {
     border-top: 2px solid var(--color-light-text);
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     gap: 30px;
     margin: 80px;
@@ -484,17 +505,17 @@ footer{
     align-items: center;
 }
 
-.get-in-touch{
+.get-in-touch {
     color: var(--color-light-text);
     margin-bottom: 32px;
 }
 
-.get-in-touch p{
+.get-in-touch p {
     margin: 25px 0px;
     width: 213px;
 }
 
-.icon-social{
+.icon-social {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -502,58 +523,58 @@ footer{
     margin-top: 25px;
 }
 
-.facebook{
+.facebook {
     transition: 0.7s;
 }
 
-.facebook:hover{
+.facebook:hover {
     transform: translateY(-10px);
 }
 
-.instagram{
+.instagram {
     transition: 0.7s;
 }
 
-.instagram:hover{
+.instagram:hover {
     transform: translateY(-10px);
 }
 
-.twitter{
+.twitter {
     transition: 0.7s;
 }
 
-.twitter:hover{
+.twitter:hover {
     transform: translateY(-10px);
 }
 
 
-.footer-content h3{
+.footer-content h3 {
     color: var(--color-light-text);
     margin-bottom: 25px;
     font-size: 24px;
 }
 
 
-.footer-content ul{
+.footer-content ul {
     list-style: none;
 }
 
-.footer-content li{
+.footer-content li {
     margin-bottom: 10px;
     transition: 0.5s;
 }
 
-.footer-content li:hover{
+.footer-content li:hover {
     transform: translatex(10px);
 }
 
-.footer-content a{
+.footer-content a {
     text-decoration: none;
     color: var(--color-light-text);
 
 }
 
-.footer-content a:hover{
+.footer-content a:hover {
     color: var(--color-primary-color);
 }
 
@@ -567,17 +588,79 @@ footer{
 
 /* --------- RESPONSIVIDADE --------- */
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     /* ---- header ---- */
-    .nav-header, .header-button{
+    .nav-header,
+    .header-button {
         display: none;
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: flex;
+        margin-top: 25px;
+        cursor: pointer;
     }
-    
+
+    .nav-menu-mobile {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: solid 1px white;
+        flex-direction: column;
+        padding: 20px;
+        position: absolute;
+        left: 1%;
+        top: 7%;
+        width: 90%;
+        visibility: hidden;
+    }
+
+    .nav-menu {
+        cursor: pointer;
+    }
+
+
+    .nav-menu a {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-light-text);
+        font-weight: 600px;
+
+    }
+
+    .nav-menu li {
+        margin-bottom: 10px;
+    }
+
+    .header-menu-button {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    button, .login-menu{
+        text-align: start;
+        margin-top: 20px;
+    }
+
+    .login-menu {
+        color: var(--color-light-text);
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        border: solid 1px white;
+        width: 100px;
+        border-radius: 5px;
+        padding: 15px 25px;
+    }
+
+    .nav-menu-mobile.show{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
     /* ---- fim header ---- */
 
     /* ----- main ---- */
@@ -585,64 +668,65 @@ footer{
     main {
         flex-direction: column;
         width: 100%;
-        margin:  0 auto;
+        margin: 0 auto;
+        transition: margin-top 0.8s ease;
     }
 
-    .main-content{
+    .main-content {
         width: 90%;
-        margin:  0 auto;
+        margin: 0 auto;
     }
 
-    .main-content h1{
+    .main-content h1 {
         margin-top: 40px;
         font-size: 48px;
     }
 
-    .main-content p{
+    .main-content p {
         width: 100%;
     }
 
-   .main-button{
-    display: flex;
-    gap: 4px;
-    margin-bottom: 0px;
-   }
+    .main-button {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 0px;
+    }
 
-   .main-img img{
+    .main-img img {
         width: 100%;
         height: 100%;
         margin: 0 auto;
-   }
+    }
 
     /* ---- fim main ---- */
 
     /* ---- section-quality ---- */
-    
-    .section-quality{
+
+    .section-quality {
         width: 90%;
         margin: 0 auto;
     }
 
-   .quality-content{
+    .quality-content {
         width: 90%;
-        margin:  0 auto;
-   }
+        margin: 0 auto;
+    }
 
-   .quality-content h2{
+    .quality-content h2 {
         width: 90%;
-       font-size: 30px;
-       margin:  0 auto;
-   }
+        font-size: 30px;
+        margin: 0 auto;
+    }
 
-   .quality-content p{
-     width: 90%;
-     margin:  0 auto;
-     margin-top: 20px;
-   }
-
-    .quality-container{
+    .quality-content p {
         width: 90%;
-        margin:  0 auto;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .quality-container {
+        width: 90%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         font-size: 14px;
@@ -650,141 +734,143 @@ footer{
 
     /* ---- fim section-quality ---- */
 
-     /* ----  what-clients-say ---- */
+    /* ----  what-clients-say ---- */
 
-     .what-clients-say{
+    .what-clients-say {
         width: 90%;
-        margin:  0 auto;
-     }
+        margin: 0 auto;
+    }
 
-     .what-clients-say p{
+    .what-clients-say p {
         width: 100%;
-     }
+    }
 
-     .clients-content{
+    .clients-content {
         width: 100%;
-     }
+    }
 
-     .clients-content p{
+    .clients-content p {
         font-weight: 600px;
-     }
+    }
 
-      /* ---- fim what-clients-say ---- */
+    /* ---- fim what-clients-say ---- */
 
-        /* ---- download-app ---- */
+    /* ---- download-app ---- */
 
-        .download-app{
-            width: 90%;
-            margin: 0 auto;
-        }
+    .download-app {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-        .download-app h2{
-            margin: 40px 0px 20px;
-        }
+    .download-app h2 {
+        margin: 40px 0px 20px;
+    }
 
-        .download-app p {
-            width: 100%;
-            margin: 0 auto;
-        }
+    .download-app p {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-        .download-content{
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
+    .download-content {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
 
-        /* ---- fim download-app ---- */
+    /* ---- fim download-app ---- */
 
-        /* ----- section-princing ----- */
+    /* ----- section-princing ----- */
 
-        .section-princing{
-            width: 90%;
-            margin:  0 auto;
-        }
+    .section-princing {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-        .section-princing p{
-            width: 100%;
-        }
+    .section-princing p {
+        width: 100%;
+    }
 
-        .pricing-cards {
-            flex-direction: column;
-            margin: 0 auto;
-            margin-top: 40px;
-            gap: 20px;
-            width: 90%;
-        }
-    
-        .per-month {
-            flex-direction: column;
-            padding: 30px 10px;
-            width: 100%;
-            margin-bottom: 40px;
-            gap: 20px;
-        }
+    .pricing-cards {
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 40px;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .per-month {
+        flex-direction: column;
+        padding: 30px 10px;
+        width: 100%;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
 
 
-        /* ----- fim  section-princing ----- */
+    /* ----- fim  section-princing ----- */
 
-        /* ------ have-branches ------ */
+    /* ------ have-branches ------ */
 
-        .have-branches {
-            flex-direction: column;
-            padding: 0;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-    
-        .have-content {
-            width: 90%;
-            padding: 20px;
-            text-align: center;
-        }
-    
-        .have-content p {
-            width: 100%;
-        }
-    
-        .have-img {
-            width: 90%;
-            margin: 0 auto;
-        }
-    
-        .have-img img {
-            width: 100%;
-        }
-        /* ------ fim have-branches ------ */
+    .have-branches {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
 
-        /*------ form ------*/
-       form{
+    .have-content {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .have-content p {
+        width: 100%;
+    }
+
+    .have-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .have-img img {
+        width: 100%;
+    }
+
+    /* ------ fim have-branches ------ */
+
+    /*------ form ------*/
+    form {
         flex-direction: column;
         width: 100%;
         padding: 1rem;
-       }
-       form img {
-        display: none;
-      }
-      
-      .form-containe{
-            width: 100%;
-            padding: 0 1rem;
-            box-sizing: border-box;
-      }
+    }
 
-      .form-containe h3 {
+    form img {
+        display: none;
+    }
+
+    .form-containe {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .form-containe h3 {
         text-align: center;
         font-size: 1.2rem;
         margin-bottom: 1rem;
-      }
+    }
 
-      .form-content {
+    .form-content {
         margin-bottom: 1rem;
-      }
+    }
 
-      .form-information label {
+    .form-information label {
         font-size: 0.9rem;
         margin-bottom: 5px;
         display: block;
-      }
+    }
 
     .form-information input,
     .form-information select {
@@ -795,249 +881,249 @@ footer{
         box-sizing: border-box;
     }
 
-      
+
     .form-button {
         width: 90%;
         padding: 12px;
         font-size: 1.1rem;
         background-color: var(--color-primary-color);
         border: none;
-      }
-      
-      
-     /*--------fim form ------*/
-        
-     /* ------- footer ------ */
-
-     footer{
-        width: 100%;
-        margin:  0 auto;
-     }
-
-     .footer-container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-     }
-
-     .by-figmaland{
-        width: 100%;
-        padding: 25px 20px;
-        text-align: center;
-     }
-
-     .by-figmaland p{
-        width: 90%;
-        text-align: center;
-     }
-
-
-      /* ------- fim footer ------ */
-
-}
-
-@media (min-width: 601px) and (max-width: 991px){
-
-
-        /* ---- header ---- */
-
-        header{
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            align-items: center;
-        }
-        
-
-        /* ---- fim header ---- */
-
-     /* ----- main ---- */
-
-     main {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 10px;
     }
 
- 
 
-    .main-content h1{
-        margin-top: 40px;
-        font-size: 58px;
-    }
+    /*--------fim form ------*/
 
-    .main-content p{
-        width: 100%;
-    }
+    /* ------- footer ------ */
 
-   .main-button{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 40px;
-   }
-
-   .main-img img{
-        width: 450px;
-        height: 100%;
-   }
-
-    /* ---- fim main ---- */
-
-    /* ---- section-quality ---- */
-    
-    .section-quality{
+    footer {
         width: 100%;
         margin: 0 auto;
     }
 
-   .quality-content{
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .by-figmaland {
         width: 100%;
-        margin:  0 auto;
-   }
+        padding: 25px 20px;
+        text-align: center;
+    }
 
-   .quality-content h2{
-       font-size: 40px;
-       margin-top: 40px;
-   }
+    .by-figmaland p {
+        width: 90%;
+        text-align: center;
+    }
 
-   .quality-content p{
-     margin-top: 20px;
-   }
 
-    .quality-container{
+    /* ------- fim footer ------ */
+
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+
+
+    /* ---- header ---- */
+
+    header {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* ---- fim header ---- */
+
+    /* ----- main ---- */
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+
+    .main-content h1 {
+        margin-top: 40px;
+        font-size: 58px;
+    }
+
+    .main-content p {
+        width: 100%;
+    }
+
+    .main-button {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .main-img img {
+        width: 450px;
+        height: 100%;
+    }
+
+    /* ---- fim main ---- */
+
+    /* ---- section-quality ---- */
+
+    .section-quality {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .quality-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .quality-content h2 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .quality-content p {
+        margin-top: 20px;
+    }
+
+    .quality-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
 
     /* ---- fim section-quality ---- */
 
-     /* ----  what-clients-say ---- */
+    /* ----  what-clients-say ---- */
 
-     .what-clients-say{
+    .what-clients-say {
         width: 95%;
-        margin:  0 auto;
-     }
+        margin: 0 auto;
+    }
 
-     .what-clients-say h2{
+    .what-clients-say h2 {
         margin: 40px 0px 10px;
-     }
+    }
 
-     .what-clients-say p{
+    .what-clients-say p {
         width: 75%;
-        margin:  0 auto;
-     }
+        margin: 0 auto;
+    }
 
-     .clients-content{
+    .clients-content {
         width: 100%;
-     }
+    }
 
-     .clients-content p{
+    .clients-content p {
         font-weight: 600px;
-     }
+    }
 
-      /* ---- fim what-clients-say ---- */
+    /* ---- fim what-clients-say ---- */
 
-        /* ---- download-app ---- */
+    /* ---- download-app ---- */
 
-        .download-app{
-            width: 90%;
-            margin: 0 auto;
-        }
+    .download-app {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-        .download-app h2{
-            margin-top: 40px;
-        }
+    .download-app h2 {
+        margin-top: 40px;
+    }
 
-        .download-content{
-            margin: 30px 70px;
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        
-
-        /* ---- fim download-app ---- */
-
-        /* ----- section-princing ----- */
-
-        .section-princing{
-            width: 90%;
-            margin:  0 auto;
-        }
-
-        .section-princing p{
-            width: 70%;
-        }
-
-        .pricing-cards {
-            margin: 0 auto;
-            margin-top: 40px;
-            gap: 50px;
-            width: 90%;
-        }
-    
-        .per-month {
-            flex-direction: column;
-            padding: 30px 30px;
-            width: 100%;
-            margin-bottom: 40px;
-            gap: 20px;
-        }
+    .download-content {
+        margin: 30px 70px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
-        /* ----- fim  section-princing ----- */
 
-        /* ------ have-branches ------ */
+    /* ---- fim download-app ---- */
 
-        .have-branches {
-            padding: 0;
-            margin-bottom: 30px;
-            width: 100%;
-        }
-    
-        .have-content {
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-        }
-    
-        .have-content h2{
-            width: 100%;
-            font-size: 35px;
-            text-align: start;
-        }
+    /* ----- section-princing ----- */
 
-        .have-content p {
-            text-align: start;
-            width: 90%;
-        }
-    
-        /* ------ fim have-branches ------ */
+    .section-princing {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-        /*------ form ------*/
-       form{
+    .section-princing p {
+        width: 70%;
+    }
+
+    .pricing-cards {
+        margin: 0 auto;
+        margin-top: 40px;
+        gap: 50px;
+        width: 90%;
+    }
+
+    .per-month {
+        flex-direction: column;
+        padding: 30px 30px;
+        width: 100%;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+
+    /* ----- fim  section-princing ----- */
+
+    /* ------ have-branches ------ */
+
+    .have-branches {
+        padding: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .have-content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .have-content h2 {
+        width: 100%;
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .have-content p {
+        text-align: start;
+        width: 90%;
+    }
+
+    /* ------ fim have-branches ------ */
+
+    /*------ form ------*/
+    form {
         width: 90%;
         padding: 1rem;
-       }
-     
-      
-     /*--------fim form ------*/
-        
-     /* ------- footer ------ */
+    }
 
-     footer{
+
+    /*--------fim form ------*/
+
+    /* ------- footer ------ */
+
+    footer {
         width: 100%;
-        margin:  0 auto;
-     }
+        margin: 0 auto;
+    }
 
 
-     .by-figmaland{
+    .by-figmaland {
         width: 100%;
         padding: 25px 20px;
         text-align: center;
-     }
+    }
 
 
-      /* ------- fim footer ------ */
+    /* ------- fim footer ------ */
 }
